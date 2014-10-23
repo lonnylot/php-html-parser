@@ -366,9 +366,6 @@ class Dom {
 		// strip out server side scripts
 		$str = preg_replace("'(<\?)(.*?)(\?>)'s", '', $str);
 		
-		// strip smarty scripts
-		$str = preg_replace("'(\{\w)(.*?)(\})'s", '', $str);
-
 		return $str;
 	}
 
